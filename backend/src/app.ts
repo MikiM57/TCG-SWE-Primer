@@ -24,7 +24,7 @@ app.use(
 app.use(express.json());
 
 app.use("/users", userRoutes);
-app.use("/projects", projectRoutes);
+app.use("/", projectRoutes);
 app.use("/associates", associateRoutes);
 
 // Initialize Supabase client
